@@ -1,0 +1,71 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+      padding: 16px 16px 32px 16px;
+       margin: 16px 16px;
+       background-color:rgb(254, 220, 220) ;
+       border-radius: 16px;
+}
+.get-in-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.get-in-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  
+}
+
+.get-in-card:hover {
+  transform: translateY(-5px);
+}
+
+.get-in-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.get-in-card h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 1rem 0 1rem;
+  color: #333;
+}
+
+.get-in-card p {
+  font-size: 0.95rem;
+  margin: 0.5rem 1rem 1rem 1rem;
+  color: #666;
+}
+
+/* Responsive behavior */
+@media (min-width: 600px) {
+  .get-in-card {
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+
+@media (min-width: 900px) {
+  .get-in-card {
+    flex: 1 1 calc(33.333% - 1rem);
+  }
+}
+
+.package-heading{
+  font-size: var(--font-subheading);
+  color: var(--primary-color);
+}

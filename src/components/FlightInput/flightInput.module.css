@@ -1,0 +1,95 @@
+.flight-input-outer-container {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 22%;
+  z-index: 10;
+}
+
+.flight-input-container {
+  width: 74%;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Radio button styles */
+.radio-btn-section {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.radio-btn-section label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Input section layout */
+.input-container {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 12px;
+  flex-wrap: wrap;
+ 
+}
+
+.input-container input ,.input-container p{
+  padding: 10px 14px;
+  border: 1px solid var(--primary-color);
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+  height: 50px;
+}
+.input-container p{
+    display: flex;
+    align-items: center;
+}
+.input-section input:focus {
+  border-color: #0074e4;
+}
+
+/* Passenger and class display */
+.passenger-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #444;
+}
+
+
+
+/* Responsive layout for desktop */
+@media (min-width: 600px) {
+  .input-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .radio-btn-section {
+    grid-column: span 2;
+  }
+
+  .passenger-info {
+    grid-column: span 2;
+  }
+
+  .flight-input-container button {
+    grid-column: span 2;
+  }
+}

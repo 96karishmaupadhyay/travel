@@ -1,0 +1,112 @@
+.tab-container{
+  background: rgb(254, 220, 220);
+  padding: 16px 16px 32px 16px;
+  margin: 8px 16px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+.package-heading{
+  font-size: var(--font-subheading);
+  color: var(--primary-color);
+}
+.tab-btn-container{
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+
+}
+.active-tab-btn,.inactive-tab-btn{
+  font-size: var(--font-paragraph);
+  padding: 4px 8px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+.active-tab-btn{
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+}
+.inactive-tab-btn{
+  border: 1px solid var(--primary-color);
+  background: none;
+  font-weight: 300;
+}
+.active-tab-btn:hover,.inactive-tab-btn:hover{
+background: var(--secondary-color);
+border: none;
+color: white;
+}
+.tab-content-container{
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  
+ 
+}
+.tab-item{
+ border: 1px solid white;
+  padding: 4px;
+  border-radius: 16px;
+  box-shadow: 0 1px 2px ;  
+  transition: box-shadow 0.3s ease;
+   background-color: white;
+}
+.tab-item-image{
+  height: 200px;
+  width: 260px;
+  border-radius: 16px;
+ border-bottom-left-radius:0px;
+ border-bottom-right-radius: 0px;
+}
+.item-content{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0px;
+ 
+ 
+}
+.tab-item-name{
+  font-size: var(--font-paragraph);
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.tab-item-price{
+  font-size: var(--font-paragraph);
+  font-weight: 900;
+  color: var(--secondary-color);
+}
+.view-more-btn,.view-less-btn{
+  border: none;
+  border-bottom: 2px solid var(--primary-color);
+  color:var(--secondary-color);
+  background: none;
+  display: inline-block; 
+  position: absolute;
+  bottom: 10px;
+  outline: none;
+
+}
+.view-more-btn:hover,.view-less-btn:hover{
+  color: var(--primary-color);
+  font-weight: 700;
+  padding: 0px;
+  border-bottom:2px solid var(--secondary-color);
+}
+@media (max-width: 768px) {
+  .tab-content-container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1rem;
+  }
+
+  .tab-item {
+    min-width: 250px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+}

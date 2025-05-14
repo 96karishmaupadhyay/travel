@@ -1,0 +1,20 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 16px;
+    box-shadow: 0px 0px 2px black;
+    height: 68px;
+}
+.right-nav{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: var(--font-laptop-btn);
+}
+
+@media (max-width:580px) {
+ .navbar{
+    display: none;
+ }
+}

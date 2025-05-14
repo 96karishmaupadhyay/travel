@@ -1,0 +1,65 @@
+
+.left-arrow,.right-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 16px;
+    padding: 4px;
+    border: 1px solid var(--primary-color);
+    background-color: white;
+    font-size: var(--font-subheading);
+}
+.left-arrow:hover,.right-arrow:hover{
+    background: var(--background-gradient);
+    color: white;
+}
+.left-arrow{
+left: 10px;
+
+}
+.right-arrow{
+right: 10px;
+}
+.offer-image{
+    height: 180px;
+}
+.offer-section-container {
+  padding: 1rem;
+  background-color: #eff6ff; /* Tailwind's bg-blue-50 */
+  border-radius: 1rem; /* rounded-2xl */
+  margin: 1rem;
+  margin-bottom: 2.5rem; /* mb-10 */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* shadow-2xl */
+}
+
+.offer-heading {
+  font-size: var(--font-subheading);
+  font-weight: 700;   /* font-bold */
+  margin-bottom: 1rem;
+  color: #ef4444;     /* text-red-500 */
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.slide-item {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.offer-image {
+  width: 100%;
+  border-radius: 0.75rem;
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none; /* Make buttons non-blocking for slider */
+}
+

@@ -1,13 +1,46 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --primary-color:#042859;
+  --secondary-color:#d32027;
+  --tertiary-color:#386c99;
+  --background-gradient:linear-gradient(90deg, #042859 14.23%, #386c99 50.48%, #d32027 87.69%);
+   --font-heading: 2.5rem;
+  --font-subheading: 1.5rem;
+  --font-paragraph: 1rem;           
+  --font-heading-mobile: 1.8rem;
+  --font-subheading-mobile: 1.2rem;
+  --font-paragraph-mobile: 0.80rem; 
+  --font-laptop-btn:1.02rem;
+  --font-mobile-btn:0.875rem
+}
+.btn{
+font-size: var(--font-laptop-btn);
+padding: 6px 12px;
+border-radius: 18px;
+border: none;
+background: var(--background-gradient);
+color: white;
+}
+.btn:hover{
+   background: var(--background-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 1px solid #042859;
+  font-weight: 600;
+}
+@media (max-width:580px) {
+  .btn{
+    font-size: var(--font-mobile-btn);
+  }
+}
+.logo{
+  height: 40px;
+}
+li{
+  list-style: none;
 }

@@ -1,0 +1,59 @@
+.card {
+  display: flex;
+  gap: 2rem;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.image {
+  border-radius: 9999px;
+  height: 56px;
+  width: 56px;
+  border: 4px solid #bfdbfe; /* tailwind blue-100 */
+}
+
+.departureTime,
+.arrivalTime {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.airportCode {
+  margin: 0;
+}
+
+.flightDuration {
+  text-align: center;
+}
+
+.arrowIcon {
+  font-size: 1.5rem;
+  display: block;
+  margin: auto;
+}
+
+.bookingSection {
+  text-align: center;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--primary-color)
+}
+
+.bookButton {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  background:var(--background-gradient); 
+  color: white;
+  border: none;
+  cursor: pointer;
+}

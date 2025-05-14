@@ -1,0 +1,56 @@
+.heronav {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background: black;
+  padding: 12px 24px;
+  border-radius: 30px;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+}
+
+.heronav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.heronav-list {
+  font-size: var(--font-subheading-mobile);
+  color: white;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  white-space: nowrap;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+/* Active state */
+.active .heronav-list {
+  background: white;
+  color: black;
+  font-weight: bold;
+}
+
+/* Mobile style */
+@media (max-width: 580px) {
+  .heronav {
+    background: transparent;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .heronav::-webkit-scrollbar {
+    display: scroll;
+  }
+
+  .active .heronav-list {
+    background: none;
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+}
