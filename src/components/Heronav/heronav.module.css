@@ -44,7 +44,7 @@
 }
 
 
-@media (max-width: 580px) {
+@media (max-width: 768px) {
   .heronav {
     background: transparent;
     overflow-x: auto;

@@ -42,7 +42,7 @@ color: white;
 .tab-content-container{
   display: flex;
   gap: 16px;
-  flex-wrap: wrap;
+ 
   
  
 }

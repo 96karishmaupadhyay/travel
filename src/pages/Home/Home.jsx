@@ -19,7 +19,7 @@ import Topnav from '../../components/Topnav/Topnav'
 import HeroNav from '../../components/Heronav/Heronav'
 const Home = () => {
   return (
-    <div>
+    <div >
       <Topnav/>
       {/* <Navbar/> */}
       {/* <HeroSlides/> */}
@@ -29,7 +29,7 @@ const Home = () => {
       <TopPackages/>
       <ImageGrid/>
       <FlightSection/>
-      {/* <GetInSection/> */}
+      <GetInSection/>
       <HotelSection/>
       <TrainSection/>
       <ExpirenceSection/>
