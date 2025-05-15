@@ -17,6 +17,7 @@ import newyork2 from "../../assets/newyork2.jpeg";
 import newyork3 from "../../assets/newyork3.jpeg";
 import newyork4 from "../../assets/newyork4.jpeg";
 import styles from "./topPackages.module.css";
+import { Link } from "react-router-dom";
 const TopPackages = () => {
   const [activeTab, setActiveTab] = useState(1);
   const [visibleCard, setVisibleCard] = useState(4);
@@ -77,7 +78,8 @@ const TopPackages = () => {
 
       <div className={styles["tab-content-container"]}>
         {displayCard.map((item, index) => (
-          <div key={index} className={styles["tab-item"]}>
+   <Link to="/categories">   
+    <div key={index} className={styles["tab-item"]}>
             <img
               src={item.image}
               alt={item.name}
@@ -88,6 +90,7 @@ const TopPackages = () => {
               <p className={styles["tab-item-price"]}>{item.price}</p>
             </div>
           </div>
+          </Link>
         ))}
 
       </div>
@@ -109,6 +112,7 @@ const TopPackages = () => {
             </button>
           )}
         </div>
+        
       )}
     </div>
   );

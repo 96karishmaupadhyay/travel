@@ -32,20 +32,34 @@ const FlightInput = () => {
         </label>
       </div>
       <div className={styles['input-container']}>
-        <input type="text" placeholder="Start" />
+        <div>
+          <input type="text" placeholder="Start" />
         <input type="text" placeholder="End" />
-        <input type="date" name="" id="" />
+        </div>
+        <div>
+         <input type="date" name="" id="" />
         <p>Adult ,child ,class <RiArrowDropDownLine fontSize={24}/></p>
+        </div>
+        {/* <input type="text" placeholder="Start" />
+        <input type="text" placeholder="End" /> */}
+        {/* <input type="date" name="" id="" />
+        <p>Adult ,child ,class <RiArrowDropDownLine fontSize={24}/></p> */}
         {tripType==="twoway"&&
         (<>
-            <input type="text" placeholder="from " />
+        <div>
+           <input type="text" placeholder="from " />
             <input type="text" placeholder="'To" />
+        </div>
+           
             <input type="date" name="" id="" />
            
             </>
         )
         }
-       <Link to='/flight-search'><button className="btn">Search</button></Link> 
+    
+          <Link to='/flight-search'><button className={styles['flight-search-btn']}>Search</button></Link> 
+    
+     
          </div>
     </div>
     </div>

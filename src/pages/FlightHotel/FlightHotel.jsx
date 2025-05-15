@@ -8,13 +8,16 @@ import ImageGrid from '../../sections/ImageGrid/ImageGrid'
 import HotelSection from '../../sections/HotelSection/HotelSection'
 import ExpirenceSection from '../../sections/ExperienceSection/ExperienceSection'
 import Footer from '../../sections/Footer/Footer'
+import HeroNav from '../../components/Heronav/Heronav'
 const FlightHotel = () => {
   return (
     <div>
       <Navbar/>
-      <HeroSlides/>
+      <HeroNav/>
      <FlightHotelInput/>
-     <OfferSection/>
+   
+      <OfferSection/>
+   
      <FlightSection/>
      <ImageGrid/>
      <HotelSection/>

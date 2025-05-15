@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./trainInput.module.css";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 const TrainInput = () => {
 
   return (
@@ -8,11 +9,17 @@ const TrainInput = () => {
     <div className={styles["train-input-container"]}>
      
       <div className={styles['input-container']}>
-        <input type="text" placeholder="Start" />
+        <div>
+       <input type="text" placeholder="Start" />
         <input type="text" placeholder="End" />
-        <input type="date" name="" id="" />
+        </div>
+        <div>
+<input type="date" name="" id="" />
         <p>Adult ,child ,class <RiArrowDropDownLine fontSize={24}/></p>
-        <button className="btn">Search</button>
+        </div>
+        
+      <Link to='/train-search'> <button className={styles["train-search-btn"]}>Search</button>
+      </Link> 
          </div>
     </div>
     </div>

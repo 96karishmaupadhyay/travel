@@ -8,7 +8,7 @@ import { SiMentorcruise } from "react-icons/si"
 import styles from './heronav.module.css'
 const HeroNav = () => {
   return (
-    <div >
+    <div className={styles['container']} >
       <ul className={styles['heronav']}>
   <NavLink to="/" className={({ isActive }) => `${styles['heronav-link']} ${isActive ? styles.active : ''}`}>
     <li className={styles['heronav-list']}><MdOutlineFlight /> Flights</li>

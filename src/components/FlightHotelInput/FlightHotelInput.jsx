@@ -8,11 +8,16 @@ const FlightHotelInput = () => {
     <div className={styles["flight-hotel-input-container"]}>
      
       <div className={styles['input-container']}>
-        <input type="text" placeholder="Start" />
+        <div>
+     <input type="text" placeholder="Start" />
         <input type="text" placeholder="End" />
-        <input type="date" name="" id="" />
+        </div>
+       <div>
+       <input type="date" name="" id="" />
         <p>Adult ,child ,class <RiArrowDropDownLine fontSize={24}/></p>
-        <button className="btn">Search</button>
+       </div>
+       
+        <button className={styles["flight-hotel-search-btn"]}>Search</button>
          </div>
     </div>
     </div>

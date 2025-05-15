@@ -7,11 +7,12 @@ import HotelSection from '../../sections/HotelSection/HotelSection'
 import ImageGrid from '../../sections/ImageGrid/ImageGrid'
 import ExpirenceSection from '../../sections/ExperienceSection/ExperienceSection'
 import Footer from '../../sections/Footer/Footer'
+import HeroNav from '../../components/Heronav/Heronav'
 const Hotel = () => {
   return (
     <div>
       <Navbar/>
-      <HeroSlides/>
+      <HeroNav/>
       <HotelInput/>
       <OfferSection/>
       <HotelSection/>

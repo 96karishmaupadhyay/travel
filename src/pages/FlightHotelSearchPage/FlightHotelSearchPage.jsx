@@ -5,7 +5,7 @@ const FlightHotelSearchPage = () => {
   return (
     <div>
       <Topnav/>
-      <HeroSlides/>
+     
      
     </div>
   )

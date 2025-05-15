@@ -7,12 +7,13 @@ import CruiseSection from '../../sections/CruiseSection/CruiseSection'
 import ExpirenceSection from '../../sections/ExperienceSection/ExperienceSection'
 import ImageGrid from '../../sections/ImageGrid/ImageGrid'
 import Footer from '../../sections/Footer/Footer'
+import HeroNav from '../../components/Heronav/Heronav'
 const Cruise = () => {
   return (
     <div>
       <Navbar/>
-      <HeroSlides/>
-      <CruiseInput/>
+      <HeroNav/>
+      <CruiseInput/>     
       <OfferSection/>
       <CruiseSection/>
       <ImageGrid/>

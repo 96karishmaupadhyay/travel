@@ -16,7 +16,7 @@
 .tab-btn-container{
   display: flex;
   gap: 16px;
-  flex-wrap: wrap;
+  
 
 }
 .active-tab-btn,.inactive-tab-btn{
@@ -110,4 +110,29 @@ color: white;
     flex: 0 0 auto;
     scroll-snap-align: start;
   }
+   .tab-btn-container {
+    background: transparent;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    padding-bottom: 8px;
+  }
+
+  .tab-btn-container::-webkit-scrollbar {
+    display: scroll;
+  }
+  .active-tab-btn,.inactive-tab-btn{
+    border: none;
+    background: none;
+    color: var(--primary-color); 
+    padding: 0px;  
+    white-space: nowrap;
+  }
+  .active-tab-btn:hover,.inactive-tab-btn:hover{
+    background: none;
+    color: var(--secondary-color);
+    
+  }
+ 
 }

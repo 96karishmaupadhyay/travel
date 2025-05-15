@@ -14,17 +14,22 @@ import ExpirenceSection from '../../sections/ExperienceSection/ExperienceSection
 import CruiseSection from '../../sections/CruiseSection/CruiseSection'
 import Footer from '../../sections/Footer/Footer'
 import CarSection from '../../sections/CarSection/CarSection'
+import { style } from 'motion/react-client'
+import Topnav from '../../components/Topnav/Topnav'
+import HeroNav from '../../components/Heronav/Heronav'
 const Home = () => {
   return (
     <div>
-      <Navbar/>
-      <HeroSlides/>
+      <Topnav/>
+      {/* <Navbar/> */}
+      {/* <HeroSlides/> */}
+      <HeroNav/>
       <FlightInput/>
       <OfferSection/>
       <TopPackages/>
       <ImageGrid/>
       <FlightSection/>
-      <GetInSection/>
+      {/* <GetInSection/> */}
       <HotelSection/>
       <TrainSection/>
       <ExpirenceSection/>

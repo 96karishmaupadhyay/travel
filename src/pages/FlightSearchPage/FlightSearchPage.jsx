@@ -11,7 +11,7 @@ const FlightSearchPage = () => {
   return (
     <div>
       <Topnav/>
-      <HeroSlides/>
+      
       <FlightInput/>
       <div className={styles["flight-search-container"]}>
         <div>

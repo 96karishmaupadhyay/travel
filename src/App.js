@@ -7,6 +7,7 @@ import FlightHotel from './pages/FlightHotel/FlightHotel';
 import Train from './pages/Train/Train';
 import FlightSearchPage from './pages/FlightSearchPage/FlightSearchPage';
 import TrainSearchPage from './pages/TrainSearchPage/TrainSearchPage';
+import GetInSection from './sections/GetInSection/GetInSection';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Route path='/train' element={<Train/>}/>
       <Route path="/flight-search" element={<FlightSearchPage/>}/>
       <Route path="/train-search" element={<TrainSearchPage/>}/>
+      <Route path="/categories" element={<GetInSection/>}/>
     </Routes>
   );
 }

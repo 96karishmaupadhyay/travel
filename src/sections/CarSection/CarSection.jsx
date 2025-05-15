@@ -12,6 +12,9 @@ const CarSection = () => {
     { id: 1, label: "Rental" },
     { id: 2, label: "Hourly" },
     { id: 3, label: "Trip Booking" },
+      { id: 4, label: "Rental" },
+    { id: 5, label: "Hourly" },
+    { id: 6, label: "Trip Booking" },
     
   ];
 

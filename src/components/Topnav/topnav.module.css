@@ -41,6 +41,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  color: var(--primary-color);
 }
 
 .navLinksMobile {
@@ -73,8 +74,12 @@
   cursor: pointer;
   border-radius: 4px;
 }
+.navItem a{
+  text-decoration: none;
+  color: var(--primary-color);
+ 
+}
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .navLinksDesktop {
     display: none;
@@ -85,4 +90,5 @@
   .authButtons {
     display: none;
   }
+  
 }

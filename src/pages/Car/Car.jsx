@@ -6,13 +6,16 @@ import OfferSection from '../../sections/OfferSection/OfferSection'
 import CarSection from '../../sections/CarSection/CarSection'
 import ExpirenceSection from '../../sections/ExperienceSection/ExperienceSection'
 import Footer from '../../sections/Footer/Footer'
+import HeroNav from '../../components/Heronav/Heronav'
 const Car = () => {
   return (
     <div>
      <Navbar/>
-      <HeroSlides/> 
+     <HeroNav/>
       <CarInput/>
+  
       <OfferSection/>
+    
       <CarSection/>
       <ExpirenceSection/>
       <Footer/>

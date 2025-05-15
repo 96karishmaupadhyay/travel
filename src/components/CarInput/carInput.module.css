@@ -3,8 +3,6 @@
   padding: 16px;
   display: flex;
   justify-content: center;
-  position: absolute;
-  top: 22%;
   z-index: 10;
 }
 
@@ -19,16 +17,34 @@
   gap: 16px;
 }
 
-/* Input section layout */
+
 .input-container {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   gap: 12px;
   flex-wrap: wrap;
  
 }
+.input-container div{
+  display: flex;
+  gap: 20px;
+}
+.car-search-btn{
+  height: 40px;
+  width: 100%;
+  background: var(--background-gradient);
+  border: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 8px;
+}
+.car-search-btn:hover{
+  background: white;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
 
-.input-container input ,.input-container p{
+}
+.input-container input ,.input-container p, .input-container button{
   padding: 10px 14px;
   border: 1px solid var(--primary-color);
   border-radius: 6px;
@@ -36,6 +52,7 @@
   box-sizing: border-box;
   outline: none;
   height: 50px;
+  width: 100%;
 }
 /* 
 .input-container p{

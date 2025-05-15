@@ -1,6 +1,7 @@
 .slide-image-container{
 position: relative;
 overflow: hidden;
+height: 300px;
 }
 .slide-image{
 position: relative;
@@ -28,4 +29,9 @@ left: 10px;
 }
 .right-arrow{
 right: 10px;
+}
+@media (max-width:580px) {
+    .slide-image-container{
+        display: none;
+    }
 }

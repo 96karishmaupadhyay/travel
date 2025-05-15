@@ -4,7 +4,7 @@ const HotelSearchPage = () => {
   return (
     <div>
       <Topnav/>
-      <HeroSlides/>
+      
     </div>
   )
 }

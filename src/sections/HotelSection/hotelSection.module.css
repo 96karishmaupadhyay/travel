@@ -109,4 +109,19 @@ color: white;
     flex: 0 0 auto;
     scroll-snap-align: start;
   }
+    .tab-btn-container::-webkit-scrollbar {
+    display: scroll;
+  }
+  .active-tab-btn,.inactive-tab-btn{
+    border: none;
+    background: none;
+    color: var(--primary-color); 
+    padding: 0px;  
+    white-space: nowrap;
+  }
+  .active-tab-btn:hover,.inactive-tab-btn:hover{
+    background: none;
+    color: var(--secondary-color);
+    
+  }
 }

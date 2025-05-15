@@ -63,3 +63,8 @@ right: 10px;
   pointer-events: none; /* Make buttons non-blocking for slider */
 }
 
+@media (max-width:600px) {
+  .offer-section-container{
+    margin-top: 20px;
+  }
+}

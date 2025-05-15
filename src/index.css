@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 :root{
   --primary-color:#042859;
@@ -25,6 +26,8 @@ border-radius: 18px;
 border: none;
 background: var(--background-gradient);
 color: white;
+/* height: 40px; */
+
 }
 .btn:hover{
    background: var(--background-gradient);
